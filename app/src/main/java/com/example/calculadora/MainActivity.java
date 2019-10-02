@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1;
-    private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,4 +34,45 @@ public class MainActivity extends AppCompatActivity {
         dos = dos+"2";
         et1.setText(dos);
     }
+    public void Tres (View view){
+        String tres = et1.getText().toString();
+        tres = tres+"3";
+        et1.setText(tres);
+    }
+    public void Cuatro (View view){
+        String cuatro = et1.getText().toString();
+        cuatro = cuatro+"4";
+        et1.setText(cuatro);
+    }
+    public void Cinco (View view){
+        String cinco = et1.getText().toString();
+        cinco = cinco+"5";
+        et1.setText(cinco);
+    }
+    public void Seis (View view){
+        String seis = et1.getText().toString();
+        seis = seis+"6";
+        et1.setText(seis);
+    }
+    public void Siete (View view){
+        String siete = et1.getText().toString();
+        siete = siete+"7";
+        et1.setText(siete);
+    }
+    public void Ocho (View view){
+        String ocho = et1.getText().toString();
+        ocho = ocho+"8";
+        et1.setText(ocho);
+    }
+    public void Nueve (View view){
+        String nueve = et1.getText().toString();
+        nueve = nueve+"9";
+        et1.setText(nueve);
+    }
+    public void Coma (View view){
+        String coma = et1.getText().toString();
+        coma = coma+",";
+        et1.setText(coma);
+    }
+
 }
