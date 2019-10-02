@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,9 +9,10 @@
 
     <Button
         android:id="@+id/btnComa"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
-        android:text=","
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Coma"
+        android:text="."
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
@@ -18,8 +20,8 @@
 
     <Button
         android:id="@+id/btnIgual"
-        android:layout_width="68dp"
-        android:layout_height="129dp"
+        android:layout_width="82dp"
+        android:layout_height="137dp"
         android:text="="
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +30,9 @@
 
     <Button
         android:id="@+id/btnSumar"
-        android:layout_width="68dp"
-        android:layout_height="129dp"
+        android:layout_width="82dp"
+        android:layout_height="137dp"
+        android:onClick="Suma"
         android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,8 +41,8 @@
 
     <Button
         android:id="@+id/btnResta"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,8 +51,8 @@
 
     <Button
         android:id="@+id/btnMultiplicar"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
         android:text="*"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
@@ -58,8 +61,8 @@
 
     <Button
         android:id="@+id/btnDividir"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
         android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -68,8 +71,8 @@
 
     <Button
         android:id="@+id/btn0"
-        android:layout_width="170dp"
-        android:layout_height="54dp"
+        android:layout_width="184dp"
+        android:layout_height="63dp"
         android:onClick="Cero"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
@@ -79,8 +82,8 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
         android:onClick="Uno"
         android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
@@ -90,8 +93,9 @@
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Dos"
         android:text="2"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -100,8 +104,9 @@
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Tres"
         android:text="3"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
@@ -162,7 +167,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="129dp" />
+        app:layout_constraintGuide_begin="136dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
@@ -181,8 +186,9 @@
     <Button
         android:id="@+id/btn7"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Siete"
         android:text="7"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
@@ -192,8 +198,9 @@
     <Button
         android:id="@+id/btn9"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Nueve"
         android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
@@ -204,8 +211,9 @@
     <Button
         android:id="@+id/btn8"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Ocho"
         android:text="8"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -215,8 +223,9 @@
     <Button
         android:id="@+id/btn4"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Cuatro"
         android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
@@ -226,8 +235,9 @@
     <Button
         android:id="@+id/btn5"
         style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Cinco"
         android:text="5"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -236,8 +246,9 @@
 
     <Button
         android:id="@+id/btn6"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:onClick="Seis"
         android:text="6"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
@@ -255,5 +266,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"></com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

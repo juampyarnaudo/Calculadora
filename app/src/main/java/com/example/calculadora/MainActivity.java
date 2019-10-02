@@ -8,9 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MainActivity extends AppCompatActivity {
     private EditText et1;
-    private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
+    private AdView mAdView;
+    public Double operando1, operando2, resultado;
+    int ope;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         et1 = findViewById(R.id.et1);
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     public void Cero (View view){
@@ -35,4 +43,89 @@ public class MainActivity extends AppCompatActivity {
         dos = dos+"2";
         et1.setText(dos);
     }
+    public void Tres (View view){
+        String tres = et1.getText().toString();
+        tres = tres+"3";
+        et1.setText(tres);
+    }
+    public void Cuatro (View view){
+        String cuatro = et1.getText().toString();
+        cuatro = cuatro+"4";
+        et1.setText(cuatro);
+    }
+    public void Cinco (View view){
+        String cinco = et1.getText().toString();
+        cinco = cinco+"5";
+        et1.setText(cinco);
+    }
+    public void Seis (View view){
+        String seis = et1.getText().toString();
+        seis = seis+"6";
+        et1.setText(seis);
+    }
+    public void Siete (View view){
+        String siete = et1.getText().toString();
+        siete = siete+"7";
+        et1.setText(siete);
+    }
+    public void Ocho (View view){
+        String ocho = et1.getText().toString();
+        ocho = ocho+"8";
+        et1.setText(ocho);
+    }
+    public void Nueve (View view){
+        String nueve = et1.getText().toString();
+        nueve = nueve+"9";
+        et1.setText(nueve);
+    }
+    public void Coma (View view){
+        String coma = et1.getText().toString();
+        coma = coma+".";
+        et1.setText(coma);
+    }
+    public void Suma (View view){
+        try {
+            String aux1 = et1.getText().toString();
+            operando1=Double.parseDouble(aux1);
+
+        }catch (NumberFormatException nfe){}
+        et1.setText("");
+        ope=1;
+    }
+    public void Resta (View view){
+        try {
+            String aux1 = et1.getText().toString();
+            operando1=Double.parseDouble(aux1);
+
+        }catch (NumberFormatException nfe){}
+        et1.setText("");
+        ope=2;
+    }
+    public void Multiplicacion (View view){
+        try {
+            String aux1 = et1.getText().toString();
+            operando1=Double.parseDouble(aux1);
+
+        }catch (NumberFormatException nfe){}
+        et1.setText("");
+        ope=3;
+    }
+    public void Division (View view){
+        try {
+            String aux1 = et1.getText().toString();
+            operando1=Double.parseDouble(aux1);
+
+        }catch (NumberFormatException nfe){}
+        et1.setText("");
+        ope=4;
+    }
+    public void Igual (View view){
+        try {
+            String aux2 = et1.getText().toString();
+            operando2=Double.parseDouble(aux2);
+
+        }catch (NumberFormatException nfe){}
+        et1.setText("");
+    }
+
 }
