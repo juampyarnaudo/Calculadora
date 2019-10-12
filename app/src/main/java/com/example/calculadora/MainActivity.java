@@ -126,6 +126,39 @@ public class MainActivity extends AppCompatActivity {
 
         }catch (NumberFormatException nfe){}
         et1.setText("");
+        if  (ope==1){
+            resultado=operando1+operando2;
+
+        }else if (ope ==2){
+            resultado=operando1-operando2;
+
+        }else if (ope ==3){
+            resultado=operando1*operando2;
+
+        }else if (ope ==4){
+            if (operando2==0){
+                et1.setText("Error");
+            }else {
+                resultado = operando1 / operando2;
+            }
+        }
+        et1.setText(""+resultado);
+        operando1=resultado;
+    }
+    public void Clear (View view){
+        et1.setText("");
+
+        operando1 = 0.0;
+        operando2 = 0.0;
+        resultado = 0.0;
+    }
+    public void BorrarUltimo (View view){
+        if (!et1.getText().toString().equals("")){
+            et1.setText(et1.getText().subSequence(0,et1.getText().length()-1)+"");
+        }
+    }
+    public void Salir (View view){
+        finish();
     }
 
 }
